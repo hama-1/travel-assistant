@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml>
+ <category>
+     <pattern>^</pattern>
+     <template>😉لە مەبەستت تێنەگەشتم لەجێی ئەوە سڵاوێک بکە</template>
+ </category>
+</aiml>

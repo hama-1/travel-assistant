@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>random
+	  
+	    </pattern>
+	    <template>
+	   
+	   <random>
+	      <li>فەقەت ئیستەنبوڵ</li>
+	    	      <li>ترابزۆن بووەو هەر ترابزۆنیش ئەبێ</li>
+	      	      <li>ترابزۆن بووەو هەر ترابزۆنیش ئەبێ</li>
+	     <li>ماڵت ئاوا بێ تا ئەنتاڵیا وەستا بێت  بۆ 
+کوێ بچم
+</li>
+	    </random> <break/>
+	    خراپ نیە ئێسە بگەێرەوەو ئەوە هەڵبژێرە
+	     <reply>
+     <text>گەڕانەوە بۆ لیستی سەرەکی</text>
+     <postback></postback>
+ </reply>
+  <reply>
+            <text>دوو بارە بە ڕاندۆمی بۆم هەڵبژێرە</text>
+            <postback>random</postback>
+        </reply>
+	    </template>
+    </category>
+</aiml>

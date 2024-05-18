@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+
+<category>
+    <pattern><set>greets</set></pattern>
+    <template>
+        <delay>1</delay>
+        <formal> <map name="greetings"><star></star></map> </formal>  <split/> <delay>1</delay>
+      
+         میرکا بە زۆریش بێیت هەر ئەوبات بۆ تورکیا  😎
+<break/> لەبەر ئەوەی هاوینەو وە داواکاریەکی زۆر لەسەرگەشتەکانمان بۆ تورکیا هەیە 
+هەستاین بە دروستکردنی ئەم بۆتە، ئەم بۆتە بۆ ئەوە دروست کراوە تا وەڵامی هەموو پرسیارەکانت باتەوە دەربارەی گەشتکردن بۆ تورکیا، با گەشتی زانیاریەکەمان دەست پێبکات، گەشتەکانی موونلاین سێ شاری تورکیا لە خۆ دەگرێ تۆ حەزت لە کامیانە؟😄
+
+
+   
+
+ <delay>1</delay>
+      
+        <reply>
+            <text>بە ڕاندۆمی بۆم هەڵبژێرە</text>
+            <postback>random</postback>
+        </reply>
+    
+        <reply>
+            <text>فەقەت ئیستەنبوڵ</text>
+            <postback>ئ</postback>
+        </reply>
+       <reply>
+            <text>ترابزۆن بووەو هەر ترابزۆنیش ئەبێ</text>
+            <postback>ت</postback>
+        </reply>
+         <reply>
+            <text>ماڵت ئاوا بێ تا ئەنتاڵیا وەستا بێت  بۆ کوێ بچم</text>
+            <postback>ن</postback>
+            </reply> 
+            <reply>
+            <text>جارێ دڵنیا نیم🙁</text>
+            <postback>ج</postback>
+            </reply>
+            <delay>2</delay>
+     
+    </template>
+</category>
+
+<category>
+    <pattern>ج</pattern>
+    <template> ئایا پیشتر گەشتی تورکیات کردووە🤔 
+            <reply>
+            <text>بەڵێ</text>
+            <postback>بەڵێ</postback>
+        </reply>
+        <reply>
+            <text>نەخێر</text>
+            <postback>نەخێر</postback>
+        </reply>
+    </template>
+</category>
+
+<category>
+    
+    <pattern>نەخێر</pattern>
+    <template>
+       مادام وایە ئیستەنبوڵ باشترین هەڵبژاردەیە وە لە ڕێگەی ئەم لینکەشەوە سێری جوانی ئەو  شارە بکە
+    <split/>
+       <link>
+           <text>istanbul city</text>
+           <url>https://youtu.be/eV6lTEY95yY?si=GDyrmJB62dGWs9Y6</url>
+       </link> <reply>
+     <text>گەڕانەوە بۆ لیستی سەرەکی</text>
+     <postback></postback>
+ </reply>
+    </template>
+    
+    
+</category>
+
+<category>
+    
+    <pattern>بەڵێ</pattern>
+    <template>دەڕەچاوی ئەم خاڵانە بکە بۆ گەرەنتی کردنی گەشتێکی خۆش
+        <ul>
+            <li>ئەگەر تاقەتی هاتوچۆی زۆرت نیە ئەوە پێشنیاری ئیستەنبوڵ ناکەین</li>
+            <li>ئەگەر زۆر دڵت بە سەوزای دەکرێتەوە چاوەکەم دوودڵ مەبە تا تڕابزۆن مەوەستە </li>
+            <li>وە ئەگەر حەز ئەکەی لەسەر ئەو بەحرە لێی ڕابکشێی وە پارەشت پێیە براکەم ئەنتاڵیا باشترین بژاردەیە</li>
+        </ul>
+        وە پێشنیاری ئەم ڤیدێۆیانە دەکەین بۆ سێرکردن تا زیاتر لەسەر تورکیا بزانی
+ <button>
+     <text>١٠ خۆشترین شوێنی تورکیا</text>
+     <url>https://youtu.be/dAot-KmZk-o?si=aKg85KU4EaUP8T8b</url>
+ </button>
+ <button>
+     <text>😍گەشتی دوورگەی شازادەکان </text>
+     <url>https://youtu.be/AqbpWy3axY0?si=S1Go40RqcYUttPH6</url>
+ </button>
+ <reply>
+     <text>گەڕانەوە بۆ لیستی سەرەکی</text>
+     <postback></postback>
+ </reply>
+     
+    </template>
+</category>
+<category>
+    <pattern>گەڕانەوە بۆ لیستی سەرەکی</pattern>
+    <template><srai>garanawa la fer bwn darbaray turkya</srai></template>
+</category>
+
+</aiml>

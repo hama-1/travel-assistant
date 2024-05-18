@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>final</pattern>
+	    <template>
+	        تکایە بەم شێوەیەی خوارەوە ناکەت تۆمار بکە <break/>
+ناوم  محمد سلام احمد
+
+	     
+	    </template>
+    </category>
+    <category>
+        <pattern>ناوم *</pattern>
+        <template>
+           سڵاو <think><set name="username"><star></star></set></think>
+            
+            <break></break>
+            
+            وە تکایە ئیمەیڵەکەت بنووسە بەم شێوەی خوارەوە
+          
+            
+            example.123@gmail.com  ئیمەیڵ
+        </template>
+    </category>
+    <category>
+        <pattern>ئیمەیڵ *</pattern>
+        <template>
+            <think><set email="cd"><star></star></set></think>
+        <reply>
+            <text>زانیەریەکانم بە دروستی داخڵ کردووە</text>
+            <postback>tawaw</postback>
+        </reply>
+        </template>
+       
+    </category>
+    <category>
+        <pattern>tawaw</pattern>
+        <template>
+             بەڕێز<get name="username"></get>
+             <break/>
+            <delay>1</delay>
+           
+                بەزوترین کات پەیوەندیو پێوە دەکەین
+        </template>
+    </category>
+</aiml>

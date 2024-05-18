@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<aiml version="2.0">
+	<category>
+	    <pattern>ت</pattern>
+	    <template>
+	        هەڵبژاردەیەکی شازە ،مادەم هەر ئەڕۆی با هەندێ زانیاری و بەمێ سەبارات بە ترابزۆن
+	        <ul>
+	            <li>ئەگەر مەبەستت گەیشتنە بە ئارامی و جەوێکی بێدەنگ ئەوا تڕابزۆن هەڵبژاردەی دروستە</li>
+	            <li>تۆزێ جەوەکەی ساردە ئاگاو لێ بێ</li>
+	            <li>تڕابزۆن بەوە ناسراوە کە تامی ڕاستەقینەی خواردنە تورکیەکانی لێدەکەی</li>
+	            <li>😄ناوچەیەکی تا بڵێی دڵگیرو سەوزە هەر وەک هەورامانەکەی خۆمان</li>
+	            <li>باوەڕکە وشە بەس نیە بۆ وەسفی هەر بەهەشتێکە بۆخۆی وەرە با نەختێ ڕەسمو ڤیدێۆو ئەوێوو پشان بەم </li>
+            </ul>
+            <image>https://blog.turkishairlines.com/wp-content/uploads/2021/12/trabzon-uzungol.jpg</image>
+            <button>
+                <text>beauty of trabzone</text>
+                <url>https://youtu.be/xWUAvJO9-eA?si=k-3VLqtR5xj4t8OR</url>
+            </button>
+	          <learn>
+	            <category>
+	                <pattern> کام شارم هەڵبژاردبوو بۆی بچم؟</pattern>
+	                <template>تۆ پێت وتم ترابزۆن</template>
+                </category>
+	        </learn>
+	        <reply>
+     <text>بڕۆرەوە بۆ لیستی سەرەکی</text>
+     <postback></postback>
+ </reply>
+ <reply>
+     <text>ئەی ئایا پارەی چەن تێ ئەچێ؟</text>
+     <postback>پارە ترابزۆن</postback>
+ </reply>
+	    </template>
+    </category>
+    <category>
+        <pattern>پارە ترابزۆن</pattern>
+        <template>
+            لێرەش بە کورتی و نزیک کراوەی هەندێک لە مەسرەفەکان حساب دەکەین ئەم نرخانە بە لایانی کەمەوە حساب کراوە
+             <ol>
+                 <li>ئەگەر بە پاس بڕۆی ئەوا سەری لە بەینی ٦٠ دۆلار بۆ ٩٠ دۆلارایە</li>
+                <li>هوتێل بە لایەنی زۆر کەمەوە ١٠٠ دۆلار</li>
+                <li>ڤیسە ١٤٠ دۆلار بۆ ٣ مانگ</li>
+                <li>تکتی فڕۆکە ٣٠٠دۆلار</li>
+                <li>ڕۆژانە ٥٠ دۆلار سەرف دەکەی </li>
+                <li>ئنجا هەدێو شیرینش خۆت دەزانی چەنی بۆ دائەنێی بەس ئەوە بزانە شیرینی هەرزان نیە</li>
+                
+            </ol>
+            
+  <reply>
+                <text>زانیاریم بەرێ دەربارە ڤیسەی تورکیا</text>
+                <postback>visa</postback>
+            </reply>
+            <reply>
+     <text>بڕۆرەوە بۆ لیستی سەرەکی</text>
+     <postback></postback>
+     
+ </reply>
+        </template>
+    </category>
+    
+    <category>
+        <pattern>بڕۆرەوە بۆ لیستی سەرەکی</pattern>
+        <template><srai>garanawa la trabzon</srai></template>
+    </category>
+</aiml>
